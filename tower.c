@@ -68,8 +68,8 @@ void play(){
 		if(ind[a-1]!=0)	
 		ind[a-1]--;
 		//else ind[a-1]=0;
-		printf("ind[0] : %d - %d\nind[1] : %d - %d\nind[2] : %d - %d\ncount : %d\n",ind[0],arr[ind[0]],ind[1],arr[n+ind[1]],ind[2],arr[2*n+ind[2]],count );
-		for(int i=0;i<3*n;i++){printf("%d",arr[i]);}printf("\n");
+		//printf("ind[0] : %d - %d\nind[1] : %d - %d\nind[2] : %d - %d\ncount : %d\n",ind[0],arr[ind[0]],ind[1],arr[n+ind[1]],ind[2],arr[2*n+ind[2]],count );
+		//for(int i=0;i<3*n;i++){printf("%d",arr[i]);}printf("\n");
 	}
 	if(flg1==0){
 		printscrn(n,arr,ind);
