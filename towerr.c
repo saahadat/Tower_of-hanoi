@@ -45,9 +45,19 @@ void play(){
 
 		printscrn(n,arr,ind);
 
-		printf("Enter from and to .enter 4 4 to exit\n");
+		// printf("Enter from and to .enter 4 4 to exit\n");
+		// scanf("%d %d",&a,&b);
+		// if(a==4&&b==4){flg1=1;break;}
+		printf("Enter from and to .Enter Same Same to exit\n");
 		scanf("%d %d",&a,&b);
-		if(a==4&&b==4){flg1=1;break;}
+		if(a<1||a>n||b<1||b>n ){printf("Invalid move.Try again.\n");
+			continue;}
+		if(a==b){//flg1=1;break;
+			printf("You will lose your progress.Are you sure?Press 1 to exit.0 to go back.\n");
+			scanf("%d",&flg1);
+			if(flg1==1){break;}
+			else{flg1=0;continue;}
+		}
 		if( (arr[n*(a-1)+ind[a-1]] > arr[n*(b-1)+ind[b-1]] && arr[n*(b-1)+ind[b-1]]!=0 ) || arr[n*(a-1)+ind[a-1]]==0 ){
 			printf("Invalid move.Try again.\n");
 			continue;
